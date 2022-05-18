@@ -1,0 +1,19 @@
+{
+  "name": "@jcpenne/lotide",
+  "version": "1.0.0",
+  "description": "mini clone of lodash library",
+  "main": "README.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCPenne/lotide.git"
+  },
+  "author": "Jack Palmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCPenne/lotide/issues"
+  },
+  "homepage": "https://github.com/JCPenne/lotide#readme"
+}
