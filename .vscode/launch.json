@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/head.js"
+      "program": "${workspaceFolder}/eqArrays.js"
     }
   ]
 }
