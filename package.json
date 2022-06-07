@@ -4,7 +4,7 @@
   "description": "mini clone of lodash library",
   "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/JCPenne/lotide/issues"
   },
-  "homepage": "https://github.com/JCPenne/lotide#readme"
+  "homepage": "https://github.com/JCPenne/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
 }
