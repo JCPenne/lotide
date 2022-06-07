@@ -31,8 +31,8 @@ const letterPositions = function (sentence) {
       }
     }
   }
-  console.log(results);
+  // console.log(results);
   return results;
 };
 const result1 = letterPositions('hello my name is Jack');
-assertArraysEqual(result1['l'], [2, 3]);
+// assertArraysEqual(result1['l'], [2, 3]);

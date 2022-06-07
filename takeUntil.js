@@ -45,5 +45,5 @@ const data2 = [
 ];
 const results2 = takeUntil(data2, x => x === ',');
 
-assertArraysEqual(results1, [1, 2, 5, 7, 2]);
-assertArraysEqual(results2, ["I've", 'been', 'to', 'Hollywood']);
+// assertArraysEqual(results1, [1, 2, 5, 7, 2]);
+// assertArraysEqual(results2, ["I've", 'been', 'to', 'Hollywood']);

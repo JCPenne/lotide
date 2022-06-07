@@ -3,7 +3,7 @@ const countOnly = function (allItems, itemsToCount) {
   const results = {};
 
   for (const item of allItems) {
-    console.log('This is the item : ' + item);
+    // console.log('This is the item : ' + item);
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
@@ -12,7 +12,7 @@ const countOnly = function (allItems, itemsToCount) {
       }
     }
   }
-  console.log(`These are the results: ${results}`);
+  // console.log(`These are the results: ${results}`);
   return results;
 };
 const firstNames = [
@@ -33,8 +33,8 @@ const result1 = countOnly(firstNames, {
   Fang: true,
   Agouhanna: true,
 });
-console.log(result1);
-assertEqual(result1['Jason'], 1);
-assertEqual(result1['Karima'], undefined);
-assertEqual(result1['Fang'], 2);
-assertEqual(result1['Agouhanna'], 1);
+// console.log(result1);
+// assertEqual(result1['Jason'], 1);
+// assertEqual(result1['Karima'], undefined);
+// assertEqual(result1['Fang'], 2);
+// assertEqual(result1['Agouhanna'], 1);

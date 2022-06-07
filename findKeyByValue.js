@@ -18,7 +18,7 @@ let testObj = {
   gender: 'male',
 };
 
-assertEqual(findKeyByValue(testObj, '32'), 'age');
+// assertEqual(findKeyByValue(testObj, '32'), 'age');
 
 const bestTVShowsByGenre = {
   sci_fi: 'The Expanse',
@@ -26,5 +26,5 @@ const bestTVShowsByGenre = {
   drama: 'The Wire',
 };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, 'The Wire'), 'drama');
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+// assertEqual(findKeyByValue(bestTVShowsByGenre, 'The Wire'), 'drama');
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

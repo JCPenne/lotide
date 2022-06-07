@@ -38,6 +38,6 @@ const results1 = map(words, word => word[0]);
 const results2 = map(results, result => result > 70);
 const results3 = map(lotr, x => x.species);
 
-assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
-assertArraysEqual(results2, [false, false, true, true, false, false]);
-assertArraysEqual(results3, ['wizard', 'hobbit', 'human']);
+// assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
+// assertArraysEqual(results2, [false, false, true, true, false, false]);
+// assertArraysEqual(results3, ['wizard', 'hobbit', 'human']);
