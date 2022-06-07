@@ -37,6 +37,6 @@ The following functions are currently implemented:
 - `letterPositions`:  Given a String, iterates over each character within it, omits spaces, returns an Object that has Keys showing each letter and values showing how many letters occur within the String.
 - `map`: Handmade Array.map() function. Given an Array and a Callback Function, returns a result Array showing each element that returns true when called against the Callback Function.
 - `middle`: Given an Array, if the Array length is an odd number, returns the element in the middle of the Array, if the Array length is even, returns the two middle elements of the Array, if the Array length equals 2, returns an error message, if the Array length is 1, returns the array. 
-- `tail`: returns all BUT the first element of an array
-- `takeUntil`: slices an array at a specified point and returns all elements up to that point
+- `tail`: Given an Array, returns all elements BUT the first element
+- `takeUntil`: Given an Array and a Callback Function, iterates over the Array and pushes each element into a Result Array UNTIL the Callback Function returns true.
 - `without`: compares two arrays to determine if they are equal
