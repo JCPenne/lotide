@@ -26,11 +26,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- `countLetters`: iterates over a string to count each occurence of each letter.
-- `countOnly`: iterates over an array to count only the items specified
-- `eqArrays`: checks that two arrays are strictly equal
-- `eqObjects`: checks that two objects are strictly equal
-- `findKey`: finds a given key of an object
+- `countLetters`: Given a string, returns an object showing each character and it's total count within the string.
+- `countOnly`: Given an array and an object containing which values to look for, returns an object showing each value and it's total count within the array.
+- `eqArrays`: Compares two arrays for strict equality and returns a boolean stating true or false.
+- `eqObjects`: Compares the key pairs of two objects, regardless of order, and returns a boolean stating true or false depending if they contain the same data.
+- `findKey`: Takes an Object and a function, returns an array containing all results within the Object that return true when called against the function.
 - `findKeyByValue`: finds a key with the given value in an object
 - `flatten`: flattens an array with nested arrays within it to just one array
 - `head`: slices the first element off of an array
