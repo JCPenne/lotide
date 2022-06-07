@@ -30,9 +30,9 @@ The following functions are currently implemented:
 - `countOnly`: Given an array and an object containing which values to look for, returns an object showing each value and it's total count within the array.
 - `eqArrays`: Compares two arrays for strict equality and returns a boolean stating true or false.
 - `eqObjects`: Compares the key pairs of two objects, regardless of order, and returns a boolean stating true or false depending if they contain the same data.
-- `findKey`: Takes an Object and a function, returns an array containing all results within the Object that return true when called against the function.
-- `findKeyByValue`: finds a key with the given value in an object
-- `flatten`: flattens an array with nested arrays within it to just one array
+- `findKey`: Given an Object and a function, returns an array containing all results within the Object that return true when called against the function.
+- `findKeyByValue`: Given an Object and a Value, iterates over the Object and returns the key of the given Value.
+- `flatten`: Given an Array containing nested Arrays, flattens all nested Arrays and 
 - `head`: slices the first element off of an array
 - `letterPositions`:  finds all given positions of a specified letter within a given string
 - `map`: iterates over an array and performs a function for each element (manual .map function)

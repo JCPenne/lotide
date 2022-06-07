@@ -1,6 +1,14 @@
-
+const resultArr = [];
 const flatten = function (arr) {
-  return arr.flat(1);
+  //Recursive function to reduce nested arrays down to their base layer.
+  arr.forEach(element => {
+    if (Array.isArray(element)) {
+      flatten(element);
+    } else {
+      resultArr.push(element);
+    }
+  });
+  return resultArr;
 };
 
 module.exports = flatten;
