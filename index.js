@@ -9,20 +9,19 @@ const findKeyByValue = require('./findKeyByValue');
 const map = require('./map');
 const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
-const letterPositions = require('./letterPositions')
+const letterPositions = require('./letterPositions');
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  flatten: flatten,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  map: map,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  letterPositions: letterPositions,
-  
-}
+  head,
+  tail,
+  middle,
+  flatten,
+  countLetters,
+  countOnly,
+  findKey,
+  findKeyByValue,
+  map,
+  eqArrays,
+  eqObjects,
+  letterPositions,
+};
