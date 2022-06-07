@@ -34,9 +34,9 @@ The following functions are currently implemented:
 - `findKeyByValue`: Given an Object and a Value, iterates over the Object and returns the key of the given Value.
 - `flatten`: Given an Array containing nested Arrays, flattens all nested Arrays (recursively as needed) and returns the resulting Array.
 - `head`: Given an Array, returns the first Element of the Array.
-- `letterPositions`:  finds all given positions of a specified letter within a given string
-- `map`: iterates over an array and performs a function for each element (manual .map function)
-- `middle`: returns the individual, or pair, middle values of an array
+- `letterPositions`:  Given a String, iterates over each character within it, omits spaces, returns an Object that has Keys showing each letter and values showing how many letters occur within the String.
+- `map`: Handmade Array.map() function. Given an Array and a Callback Function, returns a result Array showing each element that returns true when called against the Callback Function.
+- `middle`: Given an Array, if the Array length is an odd number, returns the element in the middle of the Array, if the Array length is even, returns the two middle elements of the Array, if the Array length equals 2, returns an error message, if the Array length is 1, returns the array. 
 - `tail`: returns all BUT the first element of an array
 - `takeUntil`: slices an array at a specified point and returns all elements up to that point
 - `without`: compares two arrays to determine if they are equal
