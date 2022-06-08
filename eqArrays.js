@@ -1,5 +1,4 @@
 //If Array lengths are equal, iterate over each element, if any element does not match across both arrays, turn the trigger to false.
-
 const eqArrays = function (arg1, arg2) {
   let result = false;
   if (!checkArrayLengths(arg1, arg2)) {
