@@ -1,16 +1,20 @@
-const countOnly = function (allItems, itemsToCount) {
-  const results = {};
-  //Iterates over allItems and checks if the key exists within results{}, if it doesn't create a key in results showing the item and it's current
-  //count amount. If it does, increase the count amount for the relative key.
+
+
+//Takes two Arrays as Parameters, an Array to iterate over, and a selection of items within the first Array that are to be counted.
+const countOnly = (allItems, itemsToCount) => {
+  //empty Object to return as the final result.
+  const result = {};
+  //Iterate over the allItems. If item is set to true within itemsToCount & result Object does not already contain the related key, create the
+  //key within result Object and set it's count to 1. If result Object does contain the key, increase it's count by 1.
   for (const item of allItems) {
     if (itemsToCount[item]) {
-      if (results[item]) {
-        results[item] += 1;
+      if (result[item]) {
+        result[item] += 1;
       } else {
-        results[item] = 1;
+        result[item] = 1;
       }
     }
   }
-  return results;
+  return result;
 };
 module.exports = countOnly;

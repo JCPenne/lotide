@@ -1,18 +1,23 @@
-const letterPositions = function (sentence) {
+
+
+//Takes a String as a Parameter. 
+//Iterates over each character within the string, omits spaces, and returns an Object showing the index/es of each character.
+const letterPositions = (string) => {
   const results = {};
-  //Iterates over each letter in the sentence
-  // As long as the letter is not a space(' ') character, create a Key of the letter in results{} and set the value to 1, or increase it by 1 if it already exists
-  for (letter = 0; letter < sentence.length; letter++) {
-    if (sentence[letter] !== ' ') {
-      if (results[sentence[letter]]) {
-        results[sentence[letter]].push(letter);
+  //Iterates over each character in the string
+  for (character = 0; character < string.length; character++) {
+    //checks that the character is not a space.
+    if (string[character] !== ' ') {
+      //If the results Object already contains the related character Key, push the index of the character to the Key's Value.
+      if (results[string[character]]) {
+        results[string[character]].push(character);
+        //If the results Object does not contain the related character Key, created a new Key and set it's Value to the index as an Array.
       } else {
-        results[sentence[letter]] = [letter];
+        results[string[character]] = [character];
       }
     }
   }
   return results;
 };
-//const result1 = letterPositions('hello my name is Jack');
 
 module.exports = letterPositions;

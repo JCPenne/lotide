@@ -1,4 +1,8 @@
-const head = function (arr) {
+
+
+//Takes an Array as a Parameter. 
+//Returns the first element of the Array.
+const head = (arr) => {
   return arr[0];
 };
 

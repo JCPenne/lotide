@@ -1,3 +1,6 @@
+
+
+//An index of all Lotide functions. Allowing global exports within the folder from one source file.
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const eqArrays = require('./eqArrays');
