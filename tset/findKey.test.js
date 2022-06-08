@@ -1,4 +1,4 @@
-const findKey = require('../functions/findkey');
+const findKey = require('../functions/findKey');
 const { assert } = require('chai');
 const obj1 = {
   Matrix: { stars: 2 },

@@ -1,4 +1,4 @@
-const countLetters = require('../countLetters');
+const countLetters = require('../functions/countLetters');
 const { assert } = require('chai');
 
 describe('#countLetters', () => {

@@ -1,4 +1,4 @@
-const findKeyByValue = require('../findKeyByValue');
+const findKeyByValue = require('../functions/findKeyByValue');
 const { assert } = require('chai');
 
 describe('#findKeyByValue', () => {

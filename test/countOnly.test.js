@@ -1,4 +1,4 @@
-const countOnly = require('../countOnly');
+const countOnly = require('../functions/countOnly');
 const { assert } = require('chai');
 
 describe('#countOnly', () => {

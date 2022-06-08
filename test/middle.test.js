@@ -1,5 +1,5 @@
+const middle = require('../functions/middle');
 const { assert } = require('chai');
-const middle = require('../middle');
 
 describe('#middle', () => {
   it(`returns 3 for [1,2,3,4,5]`, () => {

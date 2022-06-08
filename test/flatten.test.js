@@ -1,4 +1,4 @@
-const flatten = require('../flatten.js');
+const flatten = require('../functions/flatten.js');
 const { assert } = require('chai');
 
 describe('#flatten', () => {

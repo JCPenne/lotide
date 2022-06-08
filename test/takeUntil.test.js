@@ -1,4 +1,4 @@
-const takeUntil = require('../takeUntil');
+const takeUntil = require('../functions/takeUntil');
 const { assert } = require('chai');
 
 describe('#takeUntil', () => {

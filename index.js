@@ -1,18 +1,18 @@
 //An index of all Lotide functions. Allowing global exports within the folder from one source file.
-const countLetters = require('./countLetters');
-const countOnly = require('./countOnly');
-const eqArrays = require('./eqArrays');
-const eqObjects = require('./eqObjects');
-const findKey = require('./findKey');
-const findKeyByValue = require('./findKeyByValue');
-const flatten = require('./flatten');
-const head = require('./head');
-const letterPositions = require('./letterPositions');
-const map = require('./map');
-const middle = require('./middle');
-const tail = require('./tail');
-const takeUntil = require('./takeUntil');
-const without = require('./without');
+const countLetters = require('./functions/countLetters');
+const countOnly = require('./functions/countOnly');
+const eqArrays = require('./functions/eqArrays');
+const eqObjects = require('./functions/eqObjects');
+const findKey = require('./functions/findKey');
+const findKeyByValue = require('./functions/findKeyByValue');
+const flatten = require('./functions/flatten');
+const head = require('./functions/head');
+const letterPositions = require('./functions/letterPositions');
+const map = require('./functions/map');
+const middle = require('./functions/middle');
+const tail = require('./functions/tail');
+const takeUntil = require('./functions/takeUntil');
+const without = require('./functions/without');
 
 module.exports = {
   countLetters,

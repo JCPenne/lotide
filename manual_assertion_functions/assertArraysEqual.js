@@ -1,4 +1,4 @@
-const _ = require('./index');
+const _ = require('../index');
 
 //Takes two Arrays as Parameters.
 //Passes them to eqArrays, returns a pass or fail based on the results.

@@ -1,4 +1,4 @@
-const eqArrays = require('../eqArrays');
+const eqArrays = require('../functions/eqArrays');
 const { assert } = require('chai');
 
 describe('#eqArrays', () => {

@@ -1,4 +1,4 @@
-const without = require('../without');
+const without = require('../functions/without');
 const { assert } = require('chai');
 
 describe('#without', () => {

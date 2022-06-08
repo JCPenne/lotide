@@ -1,4 +1,4 @@
-const _ = require('./index');
+const _ = require('../index');
 
 //Takes two Objects as Parameters.
 //Checks for equal length first, then checks for strict equality across all elements.

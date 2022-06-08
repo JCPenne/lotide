@@ -1,4 +1,4 @@
-const map = require('../map');
+const map = require('../functions/map');
 const { assert } = require('chai');
 
 describe('#map', () => {

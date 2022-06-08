@@ -1,4 +1,4 @@
-const eqObjects = require('../eqObjects');
+const eqObjects = require('../functions/eqObjects');
 const { assert } = require('chai');
 
 describe('#eqObjects', () => {
