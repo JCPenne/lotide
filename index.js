@@ -13,6 +13,9 @@ const middle = require('./functions/middle');
 const tail = require('./functions/tail');
 const takeUntil = require('./functions/takeUntil');
 const without = require('./functions/without');
+const assertArraysEqual = require('./manual_assertion_functions/assertArraysEqual');
+const assertEqual = require('./manual_assertion_functions/assertEqual');
+const assertObjectsEqual = require('./manual_assertion_functions/assertObjectsEqual');
 
 module.exports = {
   countLetters,
@@ -29,4 +32,7 @@ module.exports = {
   tail,
   takeUntil,
   without,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual,
 };

@@ -1,4 +1,4 @@
-const _ = require('./index');
+const _ = require('../index');
 
 //Takes two objects as Parameters.
 //Passes them to eqObjects. Returns a pass or fail based on the result.
@@ -9,3 +9,4 @@ const assertObjectsEqual = (actual, expected) => {
     ? console.log(`✅ Assertion passed: ${inspect(actual)} === ${inspect(expected)}`)
     : console.log(`❗️ Assertion failed: ${inspect(actual)} !== ${inspect(expected)}`);
 };
+module.exports = assertObjectsEqual;

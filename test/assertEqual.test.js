@@ -1,4 +1,4 @@
-const assertEqual = require('../manual_assertion_functions/assertEqual');
+const _ = require('../index');
 
-assertEqual(0, 0);
-assertEqual('Hi', 'Hi');
+_.assertEqual(0, 0);
+_.assertEqual('Hi', 'Hi');
