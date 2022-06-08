@@ -1,6 +1,6 @@
-//Takes an Array as a Parameter. 
+//Takes an Array as a Parameter.
 //Returns a result Array showing the middle character/s if possible of the Parameter Array.
-const middle = (arr) => {
+const middle = arr => {
   //Create an empty result Array.
   const result = [];
   //Create a Number Variable of the Parameter's Array length divided by 2.

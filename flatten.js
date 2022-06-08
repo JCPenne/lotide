@@ -1,10 +1,8 @@
-
-
 //Set an empty result Array.
 const resultArr = [];
-//Takes an Array with nested Arrays within it as a Parameter. 
+//Takes an Array with nested Arrays within it as a Parameter.
 //Recursively flattens the Array and returns a new Array with the flattened results.
-const flatten = (arr) => {
+const flatten = arr => {
   //Iterates over each element in the Array.
   arr.forEach(element => {
     //If the data type of the element is an Array, run the flatten Function on the element.

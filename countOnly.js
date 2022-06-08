@@ -1,5 +1,3 @@
-
-
 //Takes two Arrays as Parameters, an Array to iterate over, and a selection of items within the first Array that are to be counted.
 const countOnly = (allItems, itemsToCount) => {
   //empty Object to return as the final result.

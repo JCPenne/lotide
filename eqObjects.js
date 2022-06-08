@@ -1,6 +1,6 @@
-const eqArrays = require('./eqArrays');
+const _ = require('./index');
 
-//Takes two Objects as Parameters. 
+//Takes two Objects as Parameters.
 //Checks for equal length first, then checks for strict equality across all elements.
 //Order of elements within each Object does not matter.
 const eqObjects = (object1, object2) => {
@@ -15,7 +15,7 @@ const eqObjects = (object1, object2) => {
       if (typeof object1[values] !== 'object') {
         object1[values] !== object2[values] ? (result = false) : (result = true);
       } else {
-        result = eqArrays(object1[values], object2[values]);
+        result = _.eqArrays(object1[values], object2[values]);
       }
     }
   }

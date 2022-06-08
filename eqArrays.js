@@ -1,5 +1,3 @@
-
-
 //Takes two Arrays as Parameters.
 //Returns a True or False result after checking for strict equality.
 const eqArrays = (arg1, arg2) => {

@@ -1,5 +1,3 @@
-
-
 //Takes an Array and a Callback Function as Parameters.
 //Returns a result Array that contains each Element of the Parameter Array, stopping once the Callback Function returns true.
 const takeUntil = (array, callback) => {
@@ -17,4 +15,3 @@ const takeUntil = (array, callback) => {
 };
 
 module.exports = takeUntil;
-

@@ -1,8 +1,6 @@
-
-
-//Takes a String as a Parameter. 
+//Takes a String as a Parameter.
 //Iterates over each character within the string, omits spaces, and returns an Object showing the index/es of each character.
-const letterPositions = (string) => {
+const letterPositions = string => {
   const results = {};
   //Iterates over each character in the string
   for (character = 0; character < string.length; character++) {

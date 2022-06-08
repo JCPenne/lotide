@@ -1,6 +1,4 @@
-
-
-//Takes an Array and a callback Function as Parameters. 
+//Takes an Array and a callback Function as Parameters.
 //Returns a results Array of all Elements in the Parameter Array after passing them through the callback Function
 const map = (array, callback) => {
   //Create an empty result Array
