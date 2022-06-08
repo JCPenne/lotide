@@ -1,3 +1,4 @@
+//README explains the logic for different Array lengths
 const middle = function (arr) {
   const newArr = [];
   const midIndex = arr.length / 2;
@@ -18,7 +19,5 @@ const middle = function (arr) {
   }
   return newArr;
 };
-
-// console.log(middle([1, 2, 3, 4, 5]));
 
 module.exports = middle;
