@@ -39,4 +39,4 @@ The following functions are currently implemented:
 - `middle`: Given an Array, if the Array length is an odd number, returns the element in the middle of the Array, if the Array length is even, returns the two middle elements of the Array, if the Array length equals 2, returns an error message, if the Array length is 1, returns the array. 
 - `tail`: Given an Array, returns all elements BUT the first element
 - `takeUntil`: Given an Array and a Callback Function, iterates over the Array and pushes each element into a Result Array UNTIL the Callback Function returns true.
-- `without`: compares two arrays to determine if they are equal
+- `without`: Given an Array and a Value, returns a new Array that is a copy of the original Array WITHOUT the value given.
