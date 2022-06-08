@@ -1,13 +1,16 @@
-//Takes two Arrays as Parameters, an Array to iterate over, and a selection of items within the first Array that are to be counted.
-const countOnly = (allItems, itemsToCount) => {
-  //empty Object to return as the final result.
+//Takes a source Array, and an array listing the items to be counted as Parameters.
+//Returns a result Object containing all items from the source Array that are to be counted.
+const countOnly = (sourceArr, itemsToCountArr) => {
+  //Create empty result Object.
   const result = {};
-  //Iterate over the allItems. If item is set to true within itemsToCount & result Object does not already contain the related key, create the
-  //key within result Object and set it's count to 1. If result Object does contain the key, increase it's count by 1.
-  for (const item of allItems) {
-    if (itemsToCount[item]) {
+  //Iterate over the sourceArr.
+  for (const item of sourceArr) {
+    //If item is set to true within itemsToCountArr & result Object does not already contain the related key, create the
+    //key within result Object and set it's count to 1.
+    if (itemsToCountArr[item]) {
       if (result[item]) {
         result[item] += 1;
+        //If result Object does contain the key, increase it's count by 1.
       } else {
         result[item] = 1;
       }
