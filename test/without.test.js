@@ -1,9 +1,9 @@
-const without = require('../functions/without');
+const _ = require('../index');
 const { assert } = require('chai');
 
 describe('#without', () => {
   it(`returns [2,3] for [1,2,3],[1]`, () => {
-    assert.deepEqual(without([1, 2, 3], [1]), [2, 3]);
+    assert.deepEqual(_.without([1, 2, 3], [1]), [2, 3]);
   });
 });
 // Old assert function tests

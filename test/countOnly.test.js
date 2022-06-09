@@ -1,9 +1,9 @@
-const countOnly = require('../functions/countOnly');
+const _ = require('../index');
 const { assert } = require('chai');
 
 describe('#countOnly', () => {
   it(`returns {John: 1} for ['John','Jane'],{John: true}`, () => {
-    assert.deepEqual(countOnly(['John', 'Jane'], { John: true }), { John: 1 });
+    assert.deepEqual(_.countOnly(['John', 'Jane'], { John: true }), { John: 1 });
   });
 });
 

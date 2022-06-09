@@ -1,9 +1,9 @@
-const eqArrays = require('../functions/eqArrays');
+const _ = require('../index');
 const { assert } = require('chai');
 
 describe('#eqArrays', () => {
   it(`returns true for [1,2,3],[1,2,3]`, () => {
-    assert.deepEqual(eqArrays([1, 2, 3], [1, 2, 3]),true);
+    assert.deepEqual(_.eqArrays([1, 2, 3], [1, 2, 3]), true);
   });
 });
 

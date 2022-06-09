@@ -1,10 +1,10 @@
-const takeUntil = require('../functions/takeUntil');
+const _ = require('../index');
 const { assert } = require('chai');
 
 describe('#takeUntil', () => {
   it(`returns [1,2,5] for [1,2,5,-1],x => x < 0`, () => {
     assert.deepEqual(
-      takeUntil([1, 2, 5, -1], x => x < 0),
+      _.takeUntil([1, 2, 5, -1], x => x < 0),
       [1, 2, 5],
     );
   });

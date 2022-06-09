@@ -1,10 +1,10 @@
-const map = require('../functions/map');
+const _ = require('../index');
 const { assert } = require('chai');
 
 describe('#map', () => {
   it(`returns ['g','c'] for ['ground','control'],words, word => word[0]`, () => {
     assert.deepEqual(
-      map(['ground', 'control'], word => word[0]),
+      _.map(['ground', 'control'], word => word[0]),
       ['g', 'c'],
     );
   });

@@ -1,4 +1,4 @@
-const findKey = require('../functions/findkey');
+const _ = require('../index');
 const { assert } = require('chai');
 const obj1 = {
   Matrix: { stars: 2 },
@@ -10,7 +10,7 @@ const obj1 = {
 describe('#findKey', () => {
   it(`returns ['Inception','Tenet] for obj1, x => x.stars === 5`, () => {
     assert.deepEqual(
-      findKey(obj1, x => x.stars === 5),
+      _.findKey(obj1, x => x.stars === 5),
       ['Inception', 'Tenet'],
     );
   });

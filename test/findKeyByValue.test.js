@@ -1,9 +1,9 @@
-const findKeyByValue = require('../functions/findKeyByValue');
+const _ = require('../index');
 const { assert } = require('chai');
 
 describe('#findKeyByValue', () => {
   it(`returns 'drama' for findKeyByValue({drama: 'The Wire'}, 'The Wire'))`, () => {
-    assert.strictEqual(findKeyByValue({ drama: 'The Wire' }, 'The Wire'), 'drama');
+    assert.strictEqual(_.findKeyByValue({ drama: 'The Wire' }, 'The Wire'), 'drama');
   });
 });
 
