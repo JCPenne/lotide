@@ -1,9 +1,11 @@
-//Takes an Object and a Callback Function as Parameters.
-//Returns an Array of Object Keys that return true when called within the Callback Function.
+/**
+ * Find and return keys within an object that pass the callback function
+ * @param {object} obj
+ * @param {function} callback
+ * @returns {array} An array of all keys that equal true when passed into the callback function
+ */
 const findKey = (obj, callback) => {
-  //Set an empty Result Array
   resultArr = [];
-  //Iterate over each Key in the obj Parameter. If calling the Callback Function on the Key returns true, push the Key into the result Array.
   for (key in obj) {
     if (callback(obj[key])) {
       resultArr.push(key);

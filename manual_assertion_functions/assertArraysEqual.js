@@ -1,7 +1,9 @@
-const _ = require('../index')
-//Takes two Arrays as Parameters.
-//Passes them to eqArrays, returns a pass or fail based on the results.
-//See eqArrays file for it's functionality.
+const _ = require('../index');
+/**
+ * Checks two arrays for strict equality
+ * @param {array} arr1
+ * @param {array} arr2
+ */
 const assertArraysEqual = (arr1, arr2) => {
   _.eqArrays(arr1, arr2)
     ? console.log(`✅ Assertion passed: ${arr1} === ${arr2}`)

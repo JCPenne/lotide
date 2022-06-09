@@ -1,5 +1,8 @@
-//Takes an Array as a Parameter.
-//Slices the first element off of the Parameter Array and returns the remainder of the Parameter Array.
+/**
+ * Returns the inputted array after slicing off the first element.
+ * @param {array} arr
+ * @returns {array}
+ */
 const tail = arr => {
   return (arr = arr.slice(1));
 };

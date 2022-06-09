@@ -1,7 +1,10 @@
-//Takes an Object and a Value as Parameters.
-//Returns any key that contains the Value Parameter.
+/**
+ * Traverses an Object to find the key attached to the value parameter
+ * @param {object} obj
+ * @param {string} value
+ * @returns {string} Key name attached to the Value Parameter
+ */
 const findKeyByValue = (obj, value) => {
-  //Iterate over the Keys in the obj Parameter. If the Key's Value is strictly equal to the Value Parameter, return it.
   for (keys in obj) {
     if (obj[keys] === value) {
       return keys;

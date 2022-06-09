@@ -1,6 +1,8 @@
-//Takes two Primitive Data Types as Parameters.
-//Checks for strict equality, returns a pass or fail depending on the result.
-//For Array or Object assertion use assertArraysEqual or assertObjectsEqual
+/**
+ * Checks primitive data for strict equality.
+ * @param {primitive} actual
+ * @param {primitive} expected
+ */
 const assertEqual = (actual, expected) => {
   actual === expected
     ? console.log(`✅ Assertion passed: ${actual} === ${expected}`)

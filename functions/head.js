@@ -1,5 +1,8 @@
-//Takes an Array as a Parameter.
-//Returns the first element of the Array.
+/**
+ * Returns the first element of an array
+ * @param {array} arr 
+ * @returns {number} First element of the input array
+ */
 const head = arr => {
   return arr[0];
 };

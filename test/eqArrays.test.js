@@ -5,6 +5,9 @@ describe('#eqArrays', () => {
   it(`returns true for [1,2,3],[1,2,3]`, () => {
     assert.deepEqual(_.eqArrays([1, 2, 3], [1, 2, 3]), true);
   });
+  it(`returns true for [1,[2],3],[1,[2],3]`,() => {
+    assert.deepEqual(_.eqArrays([1,[2],3],[1,[2],3]),true);
+  })
 });
 
 // assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true

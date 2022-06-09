@@ -1,9 +1,11 @@
-//Takes a source Array, and an array listing the items to be counted as Parameters.
-//Returns a result Object containing all items from the source Array that are to be counted.
+/**
+ * Counts the number of designated items to count in an array.
+ * @param {array} sourceArr 
+ * @param {array} itemsToCountArr 
+ * @returns {object} Key = Each item marked to be counted. Value = Count
+ */
 const countOnly = (sourceArr, itemsToCountArr) => {
-  //Create empty result Object.
   const result = {};
-  //Iterate over the sourceArr.
   for (const item of sourceArr) {
     //If item is set to true within itemsToCountArr & result Object does not already contain the related key, create the
     //key within result Object and set it's count to 1.

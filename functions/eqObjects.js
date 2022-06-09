@@ -1,31 +1,32 @@
-const _ = require('../index');
+const eqArrays = require('./eqArrays');
 
-//Takes two Objects as Parameters.
-//Checks for equal length first, then checks for strict equality across all elements.
-//Order of elements within each Object does not matter.
+/**
+ * Checks two objects for strict equality. Order of keys is not taken into account.
+ * @param {object} object1
+ * @param {object} object2
+ * @returns {boolean}
+ */
 const eqObjects = (object1, object2) => {
-  //Pass both Objects to checkObjLengths to determine equal length. Returns false result and ends the function if they are not.
   if (!checkObjLengths(object1, object2)) {
     result = false;
   } else {
-    //Iterates over each Value in Object 1.
-    //If Value type is an Array, pass it to eqArrays and check for strict equality across both Objects. Set result to false if they are not equal.
-    //Else, compare both values for strict equality. Set result as false if they are not.
     for (values of Object.keys(object1)) {
       if (typeof object1[values] !== 'object') {
         object1[values] !== object2[values] ? (result = false) : (result = true);
       } else {
-        result = _.eqArrays(object1[values], object2[values]);
+        result = eqArrays(object1[values], object2[values]);
       }
     }
   }
   return result;
 };
-//Helper function to check Object lengths
-//Takes two Objects as Parameters.
-//Checks Object.keys.length for strict equality. Returns true or false.
+/**
+ * Checks if the amount of keys for two objects are equal.
+ * @param {object} obj1
+ * @param {object} obj2
+ * @returns {boolean}
+ */
 const checkObjLengths = (obj1, obj2) => {
-  //Set a trigger to false
   let lengthResult = false;
   Object.keys(obj1).length !== Object.keys(obj2).length ? '' : (lengthResult = true);
   return lengthResult;
